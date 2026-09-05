@@ -16,8 +16,6 @@
             height: 100%;
             overflow: hidden;
             background-color: #0e1117;
-            position: relative;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         iframe {
             width: 100%;
@@ -25,46 +23,13 @@
             border: none;
             display: block;
         }
-        /* Perisai Penutup 600px: Menutup 100% seluruh sisa teks */
-        .watermark-cover {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 600px;
-            height: 55px;
-            background-color: #0e1117;
-            z-index: 999999999;
-            pointer-events: all;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 25px;
-            color: #64748b;
-            font-size: 13px;
-            font-weight: 500;
-            user-select: none;
-        }
-        @media (max-width: 768px) {
-            .watermark-cover {
-                width: 100%;
-                height: 50px;
-                justify-content: center;
-                padding-right: 0;
-                font-size: 12px;
-            }
-        }
     </style>
 </head>
 <body>
     <iframe 
-        src="https://farmakokinetik-dyimzyelly.streamlit.app/?embedded=true" 
+        src="https://farmakokinetik-dyimzyelly.streamlit.app/?embed=true" 
         allow="clipboard-read; clipboard-write;"
         allowfullscreen>
     </iframe>
-
-    <!-- Penutup Resmi Tim Dyimzy -->
-    <div class="watermark-cover">
-        Platform Farmakokinetik &bull; Tim Dyimzy
-    </div>
 </body>
 </html>
