@@ -30,7 +30,7 @@
             height: 100dvh;
             overflow: hidden;
         }
-        /* Iframe dibuat 50px lebih panjang agar footer terdorong ke luar layar */
+        /* Iframe dibuat 50px lebih panjang agar footer/watermark terdorong ke luar layar */
         iframe {
             width: 100%;
             height: calc(100% + 50px);
@@ -43,7 +43,7 @@
 <body>
     <div class="app-wrapper">
         <iframe 
-            src="https://farmakokinetik-dyimzyelly.streamlit.app/" 
+            src="https://farmakokinetik-dyimzyelly.streamlit.app/?embedded=true" 
             allow="clipboard-read; clipboard-write;"
             allowfullscreen>
         </iframe>
