@@ -18,6 +18,7 @@
             overflow: hidden;
             background-color: #0e1117;
         }
+        /* Wrapper layar penuh yang memotong bagian bawah */
         .app-wrapper {
             position: fixed;
             top: 0;
@@ -29,6 +30,7 @@
             height: 100dvh;
             overflow: hidden;
         }
+        /* Iframe dibuat 50px lebih panjang agar footer terdorong ke luar layar */
         iframe {
             width: 100%;
             height: calc(100% + 50px);
@@ -41,7 +43,7 @@
 <body>
     <div class="app-wrapper">
         <iframe 
-            src="https://farmakokinetik-dyimzyelly.streamlit.app/?embed=true&embed_options=show_toolbar" 
+            src="https://farmakokinetik-dyimzyelly.streamlit.app/" 
             allow="clipboard-read; clipboard-write;"
             allowfullscreen>
         </iframe>
